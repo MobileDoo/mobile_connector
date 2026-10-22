@@ -1,0 +1,10 @@
+id,name,model_id,group_id/id,operation,domain
+access_mobile_device_system,mobile.device system,mobile.device,base.group_system,rud,
+access_mobile_push_message_system,mobile.push.message system,mobile.push.message,base.group_system,rud,
+access_mobile_home_preference_system,mobile.home.preference system,mobile.home.preference,base.group_system,rud,
+access_mobile_home_layout_system,mobile.home.layout system,mobile.home.layout,base.group_system,crud,
+access_mobile_home_layout_line_system,mobile.home.layout.line system,mobile.home.layout.line,base.group_system,crud,
+access_mobile_announcement_system,mobile.announcement system,mobile.announcement,base.group_system,crud,
+access_mobile_home_item_system,mobile.home.item system,mobile.home.item,base.group_system,crud,
+access_mobile_field_config_system,mobile.field.config system,mobile.field.config,base.group_system,crud,
+access_mobile_request_log_system,mobile.request.log system,mobile.request.log,base.group_system,rd,

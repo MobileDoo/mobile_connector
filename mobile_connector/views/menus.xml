@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo>
+    <menuitem id="menu_mobile_root" name="Mobile App" parent="base.menu_administration" sequence="90" groups="base.group_system"/>
+    <menuitem id="menu_mobile_settings" name="Settings" parent="menu_mobile_root" action="mobile_settings_action" sequence="1"/>
+    <menuitem id="menu_mobile_home_item" name="Home Screen" parent="menu_mobile_root" action="mobile_home_item_action" sequence="5"/>
+    <menuitem id="menu_mobile_home_layout" name="Role Layouts" parent="menu_mobile_root" action="mobile_home_layout_action" sequence="5"/>
+    <menuitem id="menu_mobile_announcement" name="Announcements" parent="menu_mobile_root" action="mobile_announcement_action" sequence="4"/>
+    <menuitem id="menu_mobile_home_preference" name="Personal Home Screens" parent="menu_mobile_root" action="mobile_home_preference_action" sequence="6"/>
+    <menuitem id="menu_mobile_field_config" name="Extra Fields" parent="menu_mobile_root" action="mobile_field_config_action" sequence="10"/>
+    <menuitem id="menu_mobile_device" name="Devices" parent="menu_mobile_root" action="mobile_device_action" sequence="20"/>
+    <menuitem id="menu_mobile_push_message" name="Push Messages" parent="menu_mobile_root" action="mobile_push_message_action" sequence="30"/>
+</odoo>
