@@ -1,0 +1,10 @@
+id,name,model_id:id,group_id:id,perm_read,perm_write,perm_create,perm_unlink
+access_mobile_device_system,mobile.device system,model_mobile_device,base.group_system,1,1,0,1
+access_mobile_push_message_system,mobile.push.message system,model_mobile_push_message,base.group_system,1,1,0,1
+access_mobile_home_preference_system,mobile.home.preference system,model_mobile_home_preference,base.group_system,1,1,0,1
+access_mobile_home_layout_system,mobile.home.layout system,model_mobile_home_layout,base.group_system,1,1,1,1
+access_mobile_home_layout_line_system,mobile.home.layout.line system,model_mobile_home_layout_line,base.group_system,1,1,1,1
+access_mobile_announcement_system,mobile.announcement system,model_mobile_announcement,base.group_system,1,1,1,1
+access_mobile_home_item_system,mobile.home.item system,model_mobile_home_item,base.group_system,1,1,1,1
+access_mobile_field_config_system,mobile.field.config system,model_mobile_field_config,base.group_system,1,1,1,1
+access_mobile_request_log_system,mobile.request.log system,model_mobile_request_log,base.group_system,1,0,0,1

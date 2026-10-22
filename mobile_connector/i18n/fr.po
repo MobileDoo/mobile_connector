@@ -1,0 +1,200 @@
+# Translation of Odoo Server.
+# This file contains the translation of the following modules:
+# 	* mobile_connector
+#
+
+msgid ""
+msgstr ""
+"Project-Id-Version: Odoo Server 17.0-20260908\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2026-10-06 11:10+0000\n"
+"PO-Revision-Date: 2026-10-06 11:10+0000\n"
+"Last-Translator: \n"
+"Language-Team: \n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: \n"
+"Plural-Forms: \n"
+"Language: fr_FR\n"
+
+#. module: mobile_connector
+#. odoo-python
+#: code:addons/mobile_connector/models/mobile_form_spec.py:0
+#, python-format
+msgid "Action not found."
+msgstr "Action introuvable."
+
+#. module: mobile_connector
+#: model:ir.model.fields,help:mobile_connector.field_ir_ui_menu__mobile_hide
+msgid ""
+"Do not show this menu (and its sub-menus) in the \"Odoo apps\" section of the mobile app."
+msgstr ""
+"Ne pas afficher ce menu (ni ses sous-menus) dans la section « Applications Odoo » de l'application mobile."
+
+#. module: mobile_connector
+#: model_terms:ir.ui.view,arch_db:mobile_connector.res_config_settings_view_form
+msgid "Features"
+msgstr "Fonctionnalités"
+
+#. module: mobile_connector
+#. odoo-python
+#: code:addons/mobile_connector/models/mobile_record_service.py:0
+#, python-format
+msgid "Field %s is not available on mobile."
+msgstr "Le champ %s n'est pas disponible sur mobile."
+
+#. module: mobile_connector
+#: model:ir.model.fields,field_description:mobile_connector.field_ir_ui_menu__mobile_hide
+msgid "Hide in Mobile App"
+msgstr "Masquer dans l'application mobile"
+
+#. module: mobile_connector
+#: model:ir.model.fields,field_description:mobile_connector.field_res_config_settings__mobile_menu_browser
+msgid "Odoo menus in the app"
+msgstr "Menus Odoo dans l'application"
+
+#. module: mobile_connector
+#. odoo-python
+#: code:addons/mobile_connector/models/mobile_form_spec.py:0
+#, python-format
+msgid "Please fill in: %s"
+msgstr "Veuillez renseigner : %s"
+
+#. module: mobile_connector
+#: model:ir.model.fields,field_description:mobile_connector.field_res_config_settings__mobile_require_app_lock
+msgid "Require biometric app lock"
+msgstr "Exiger le verrouillage biométrique de l'application"
+
+#. module: mobile_connector
+#: model_terms:ir.ui.view,arch_db:mobile_connector.res_config_settings_view_form
+msgid "Security"
+msgstr "Sécurité"
+
+#. module: mobile_connector
+#: model_terms:ir.ui.view,arch_db:mobile_connector.res_config_settings_view_form
+msgid ""
+"Show the user's Odoo apps and menus in the app (any module, including custom ones). Records open read-only with their action buttons; hide a menu with \"Hide in Mobile App\" in Settings > Technical > Menu Items."
+msgstr ""
+"Afficher les applications et menus Odoo de l'utilisateur dans l'application (tout module, y compris personnalisé). Les enregistrements s'ouvrent en lecture seule avec leurs boutons d'action ; masquez un menu avec « Masquer dans l'application mobile » dans Paramètres > Technique > Éléments de menu."
+
+#. module: mobile_connector
+#. odoo-python
+#: code:addons/mobile_connector/models/mobile_form_spec.py:0
+#, python-format
+msgid ""
+"This action is not available for this record any more. Please refresh."
+msgstr ""
+"Cette action n'est plus disponible pour cet enregistrement. Veuillez actualiser."
+
+#. module: mobile_connector
+#. odoo-python
+#: code:addons/mobile_connector/models/mobile_activity_service.py:0
+#, python-format
+msgid "This activity is assigned to someone else."
+msgstr "Cette activité est assignée à quelqu'un d'autre."
+
+#. module: mobile_connector
+#. odoo-python
+#: code:addons/mobile_connector/models/mobile_menu_service.py:0
+#, python-format
+msgid "This menu does not show a list of records."
+msgstr "Ce menu n'affiche pas une liste d'enregistrements."
+
+#. module: mobile_connector
+#. odoo-python
+#: code:addons/mobile_connector/models/mobile_menu_service.py:0
+#, python-format
+msgid "This menu is not available."
+msgstr "Ce menu n'est pas disponible."
+
+#. module: mobile_connector
+#. odoo-python
+#: code:addons/mobile_connector/models/mobile_form_spec.py:0
+#: code:addons/mobile_connector/models/mobile_record_service.py:0
+#, python-format
+msgid "Unknown action %s."
+msgstr "Action inconnue %s."
+
+#. module: mobile_connector
+#: model_terms:ir.ui.view,arch_db:mobile_connector.res_config_settings_view_form
+msgid ""
+"Users must unlock the app with Face ID, fingerprint or the phone's passcode (they stay logged in, the password is never stored on the phone)."
+msgstr ""
+"Les utilisateurs doivent déverrouiller l'application avec Face ID, l'empreinte digitale ou le code du téléphone (ils restent connectés, le mot de passe n'est jamais stocké sur le téléphone)."
+
+#. module: mobile_connector
+#. odoo-python
+#: code:addons/mobile_connector/models/mobile_dashboard.py:0
+#, python-format
+msgid "Waiting for you"
+msgstr "En attente de vous"
+
+#. module: mobile_connector
+#. odoo-python
+#: code:addons/mobile_connector/models/mobile_dashboard.py:0
+#, python-format
+msgid "Sales"
+msgstr "Ventes"
+
+#. module: mobile_connector
+#. odoo-python
+#: code:addons/mobile_connector/models/mobile_dashboard.py:0
+#, python-format
+msgid "Purchases"
+msgstr "Achats"
+
+#. module: mobile_connector
+#. odoo-python
+#: code:addons/mobile_connector/models/mobile_dashboard.py:0
+#, python-format
+msgid "People"
+msgstr "Personnel"
+
+#. module: mobile_connector
+#. odoo-python
+#: code:addons/mobile_connector/models/mobile_dashboard.py:0
+#, python-format
+msgid "Stock and delivery"
+msgstr "Stock et livraison"
+
+#. module: mobile_connector
+#. odoo-python
+#: code:addons/mobile_connector/models/mobile_dashboard.py:0
+#, python-format
+msgid "Overview"
+msgstr "Aperçu"
+
+#. module: mobile_connector
+#. odoo-python
+#: code:addons/mobile_connector/models/mobile_activity_service.py:0
+#, python-format
+msgid "Write a note or schedule the next step."
+msgstr "Écrivez une note ou planifiez la prochaine étape."
+
+#. module: mobile_connector
+#. odoo-python
+#: code:addons/mobile_connector/models/mobile_activity_service.py:0
+#, python-format
+msgid "The note is too long (%(max)s characters at most)."
+msgstr "La note est trop longue (%(max)s caractères au maximum)."
+
+#. module: mobile_connector
+#. odoo-python
+#: code:addons/mobile_connector/models/mobile_activity_service.py:0
+#, python-format
+msgid "This record has no notes."
+msgstr "Cet enregistrement n'a pas de notes."
+
+#. module: mobile_connector
+#. odoo-python
+#: code:addons/mobile_connector/models/mobile_activity_service.py:0
+#, python-format
+msgid "This kind of next step is not available here."
+msgstr "Ce type de prochaine étape n'est pas disponible ici."
+
+#. module: mobile_connector
+#. odoo-python
+#: code:addons/mobile_connector/models/mobile_activity_service.py:0
+#, python-format
+msgid "Choose the date of the next step."
+msgstr "Choisissez la date de la prochaine étape."

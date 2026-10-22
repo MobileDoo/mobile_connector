@@ -1,0 +1,122 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo>
+    <record id="mobile_home_item_view_tree" model="ir.ui.view">
+        <field name="name">mobile.home.item.tree</field>
+        <field name="model">mobile.home.item</field>
+        <field name="arch" type="xml">
+            <list>
+                <field name="sequence" widget="handle"/>
+                <field name="kind"/>
+                <field name="name"/>
+                <field name="tile_key" optional="show"/>
+                <field name="shortcut_key" optional="show"/>
+                <field name="model_id" optional="show"/>
+                <field name="group_ids" widget="many2many_tags" optional="show"/>
+                <field name="default_visible" widget="boolean_toggle" optional="show"/>
+                <field name="locked" widget="boolean_toggle" optional="show"/>
+                <field name="active" widget="boolean_toggle"/>
+            </list>
+        </field>
+    </record>
+
+    <record id="mobile_home_item_view_form" model="ir.ui.view">
+        <field name="name">mobile.home.item.form</field>
+        <field name="model">mobile.home.item</field>
+        <field name="arch" type="xml">
+            <form>
+                <sheet>
+                    <widget name="web_ribbon" title="Archived" bg_color="text-bg-danger" invisible="active"/>
+                    <div class="oe_title">
+                        <label for="name"/>
+                        <h1><field name="name" placeholder="e.g. Purchase orders to approve"/></h1>
+                    </div>
+                    <group>
+                        <group>
+                            <field name="kind" widget="radio" options="{'horizontal': true}"/>
+                            <field name="tile_key" invisible="kind != 'tile'" required="kind == 'tile'"/>
+                            <field name="shortcut_key" invisible="kind != 'shortcut'" required="kind == 'shortcut'"/>
+                            <field name="model_id" invisible="kind not in ('kpi', 'list')" required="kind == 'kpi'"
+                                   readonly="kind == 'list'" force_save="1" options="{'no_create': True}"/>
+                            <field name="model_name" invisible="1"/>
+                            <field name="measure" invisible="kind != 'kpi'"/>
+                            <field name="measure_field_id" invisible="kind != 'kpi' or measure != 'sum'"
+                                   required="kind == 'kpi' and measure == 'sum'" options="{'no_create': True}"/>
+                            <field name="menu_id" invisible="kind == 'tile' or (kind == 'shortcut' and shortcut_key != 'menu')"
+                                   required="kind == 'list'" options="{'no_create': True}"/>
+                            <field name="list_limit" invisible="kind != 'list'"/>
+                            <field name="trend_date_field_id" invisible="kind != 'kpi'" options="{'no_create': True}"/>
+                            <field name="trend_period" invisible="kind != 'kpi' or not trend_date_field_id"/>
+                            <field name="trend_count" invisible="kind != 'kpi' or not trend_date_field_id"/>
+                        </group>
+                        <group>
+                            <field name="icon" invisible="kind == 'tile'" placeholder="cart-check"/>
+                            <field name="color" invisible="kind == 'tile'"/>
+                            <field name="default_visible"/>
+                            <field name="group_ids" widget="many2many_tags" options="{'no_create': True}"
+                                   invisible="not default_visible"/>
+                            <field name="locked"/>
+                            <field name="sequence"/>
+                            <field name="active" invisible="1"/>
+                        </group>
+                    </group>
+                    <group invisible="kind not in ('kpi', 'list') or not model_name" string="Records">
+                        <field name="domain" widget="domain" options="{'model': 'model_name', 'in_dialog': True}" nolabel="1" colspan="2"/>
+                    </group>
+                </sheet>
+            </form>
+        </field>
+    </record>
+
+    <record id="mobile_home_item_view_search" model="ir.ui.view">
+        <field name="name">mobile.home.item.search</field>
+        <field name="model">mobile.home.item</field>
+        <field name="arch" type="xml">
+            <search>
+                <field name="name"/>
+                <filter name="archived" string="Archived" domain="[('active', '=', False)]"/>
+                <group expand="1" string="Group By">
+                    <filter name="group_kind" string="Kind" context="{'group_by': 'kind'}"/>
+                </group>
+            </search>
+        </field>
+    </record>
+
+    <record id="mobile_home_preference_view_tree" model="ir.ui.view">
+        <field name="name">mobile.home.preference.tree</field>
+        <field name="model">mobile.home.preference</field>
+        <field name="arch" type="xml">
+            <list create="false">
+                <field name="user_id"/>
+                <field name="summary"/>
+                <field name="write_date" string="Last change"/>
+            </list>
+        </field>
+    </record>
+
+    <record id="mobile_home_preference_action" model="ir.actions.act_window">
+        <field name="name">Personal Home Screens</field>
+        <field name="res_model">mobile.home.preference</field>
+        <field name="view_mode">list</field>
+        <field name="help" type="html">
+            <p class="o_view_nocontent_smiling_face">Nobody customized their home screen yet</p>
+            <p>Users arrange their home screen in the app (Home &gt; Customize): they show, hide and reorder the blocks
+               they may use. Delete a line to give that user the default home screen back.</p>
+        </field>
+    </record>
+
+    <record id="mobile_home_item_action" model="ir.actions.act_window">
+        <field name="name">Mobile Home Screen</field>
+        <field name="res_model">mobile.home.item</field>
+        <field name="view_mode">list,form</field>
+        <field name="context">{'search_default_group_kind': 1}</field>
+        <field name="help" type="html">
+            <p class="o_view_nocontent_smiling_face">Configure the home screen of the mobile app</p>
+            <p>Feature tiles: which features show, in which order (none configured: all of them).
+               KPIs: a count or a sum over any records, computed with each user's own rights; tapping one opens the list.
+               Quick actions: one tap to a new time off, check-in, an Odoo menu...
+               "Shown by default to" targets roles; users who may read the records or use the feature can still add an
+               item themselves in the app, and hide the ones that are not "Always shown".
+               Changes show in the app at once, no new app version needed.</p>
+        </field>
+    </record>
+</odoo>

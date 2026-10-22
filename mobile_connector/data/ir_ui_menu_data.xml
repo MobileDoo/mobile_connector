@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo noupdate="1">
+    <!-- Administration menus are of little use on a phone; admins can show them again on the menu item. -->
+    <record id="base.menu_administration" model="ir.ui.menu">
+        <field name="mobile_hide" eval="True"/>
+    </record>
+    <record id="base.menu_management" model="ir.ui.menu">
+        <field name="mobile_hide" eval="True"/>
+    </record>
+</odoo>
