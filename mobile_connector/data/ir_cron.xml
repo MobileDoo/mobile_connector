@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo noupdate="1">
+    <!-- Safety net only: _enqueue() triggers this cron immediately. -->
+    <record id="ir_cron_mobile_push_send" model="ir.cron">
+        <field name="name">Mobile: send push notifications</field>
+        <field name="model_id" ref="model_mobile_push_message"/>
+        <field name="state">code</field>
+        <field name="code">model._cron_send()</field>
+        <field name="interval_number">5</field>
+        <field name="interval_type">minutes</field>
+    </record>
+
+    <!-- Results of the messages the push gateway queued: read a few seconds after sending (triggered), and every
+         minute as a safety net. Nothing to do (one cheap query) when no message waits. -->
+    <record id="ir_cron_mobile_push_receipts" model="ir.cron">
+        <field name="name">Mobile: read push results from the gateway</field>
+        <field name="model_id" ref="model_mobile_push_message"/>
+        <field name="state">code</field>
+        <field name="code">model._cron_receipts()</field>
+        <field name="interval_number">1</field>
+        <field name="interval_type">minutes</field>
+    </record>
+
+    <!-- Tells the push gateway how big this Odoo is (totals only) and keeps what it answers about the subscription. -->
+    <record id="ir_cron_mobile_push_gateway_sync" model="ir.cron">
+        <field name="name">Mobile: report to the push gateway</field>
+        <field name="model_id" ref="model_mobile_push_gateway"/>
+        <field name="state">code</field>
+        <field name="code">model._cron_sync()</field>
+        <field name="interval_number">6</field>
+        <field name="interval_type">hours</field>
+    </record>
+</odoo>

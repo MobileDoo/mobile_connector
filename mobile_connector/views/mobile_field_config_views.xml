@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo>
+    <record id="mobile_field_config_view_tree" model="ir.ui.view">
+        <field name="name">mobile.field.config.tree</field>
+        <field name="model">mobile.field.config</field>
+        <field name="arch" type="xml">
+            <list editable="bottom">
+                <field name="sequence" widget="handle"/>
+                <field name="model_id" options="{'no_create': True}"/>
+                <field name="field_id" options="{'no_create': True}"/>
+                <field name="scope"/>
+                <field name="label"/>
+                <field name="widget"/>
+                <field name="active" widget="boolean_toggle"/>
+            </list>
+        </field>
+    </record>
+
+    <record id="mobile_field_config_action" model="ir.actions.act_window">
+        <field name="name">Mobile Extra Fields</field>
+        <field name="res_model">mobile.field.config</field>
+        <field name="view_mode">list</field>
+        <field name="help" type="html">
+            <p class="o_view_nocontent_smiling_face">Show custom fields in the mobile app</p>
+            <p>Pick a model handled natively by the app (e.g. Time Off) and the extra fields to display. No code needed.</p>
+        </field>
+    </record>
+</odoo>

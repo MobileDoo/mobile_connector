@@ -1,0 +1,116 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo>
+    <record id="res_config_settings_view_form" model="ir.ui.view">
+        <field name="name">res.config.settings.view.form.inherit.mobile_connector</field>
+        <field name="model">res.config.settings</field>
+        <field name="inherit_id" ref="base.res_config_settings_view_form"/>
+        <field name="arch" type="xml">
+            <xpath expr="//form" position="inside">
+                <app data-string="Mobile" string="Mobile" name="mobile_connector" groups="base.group_system">
+                    <block title="Connect the app" name="mobile_connect_settings">
+                        <setting string="Server address" help="Users scan this QR code on the first screen of the app (Scan QR code) instead of typing the address. Print it or show it on a screen; it contains the address and the database, no password.">
+                            <field name="mobile_public_url" placeholder="https://erp.example.com"/>
+                            <div class="mt8">
+                                <field name="mobile_connect_qr" widget="image" readonly="1" options="{'size': [220, 220]}" nolabel="1"/>
+                            </div>
+                        </setting>
+                    </block>
+                    <block title="Branding" name="mobile_branding_settings">
+                        <setting string="App logo" help="Shown in the mobile app on the login screen, the home screen and the list of saved systems. The app downloads it once and keeps it until it changes. Square or wide PNG, up to 512 px.">
+                            <field name="mobile_site_company_id" invisible="1"/>
+                            <field name="mobile_logo" widget="image" class="w-50" options="{'size': [0, 96]}"/>
+                        </setting>
+                        <setting string="Login background" help="Picture behind the login form of the mobile app, before anyone is signed in. The app downloads it once and keeps it until it changes. A portrait photo works best; JPEG or PNG, up to 1600 px.">
+                            <field name="mobile_login_background" widget="image" class="w-50" options="{'size': [0, 160]}"/>
+                        </setting>
+                    </block>
+                    <block title="Home screen" name="mobile_home_settings">
+                        <setting string="Home screen of the app" help="Feature tiles, KPIs and quick actions shown on the home screen, per group of users. Changes show in the app without a new version.">
+                            <button name="%(mobile_connector.mobile_home_item_action)d" type="action" string="Configure the home screen" icon="oi-arrow-right" class="btn-link"/>
+                        </setting>
+                    </block>
+                    <block title="Features" name="mobile_feature_settings">
+                        <setting help="Show the user's Odoo apps and menus in the app (any module, including custom ones). Records open read-only with their action buttons; hide a menu with &quot;Hide in Mobile App&quot; in Settings &gt; Technical &gt; Menu Items.">
+                            <field name="mobile_menu_browser"/>
+                        </setting>
+                    </block>
+                    <block title="Security" name="mobile_security_settings">
+                        <setting help="Users must unlock the app with Face ID, fingerprint or the phone's passcode (they stay logged in, the password is never stored on the phone).">
+                            <field name="mobile_require_app_lock"/>
+                        </setting>
+                    </block>
+                    <block title="Push notifications" name="mobile_push_settings">
+                        <setting string="How push notifications are sent" help="Own Firebase project: free, sent by Odoo straight to Google, Android phones only. Push gateway: Android and iPhone, through the gateway service (paid). Phones receive push from one configuration at a time.">
+                            <field name="mobile_push_provider" widget="radio"/>
+                        </setting>
+                        <setting string="Firebase project" invisible="mobile_push_provider != 'firebase'"
+                                 help="Firebase console: add an Android app with package com.mobiledoo, then upload its google-services.json (Project settings > General) and a service account key (Project settings > Service accounts > Generate new private key). iPhones do not get push with this option.">
+                            <div class="content-group">
+                                <div class="row mt8">
+                                    <label for="mobile_firebase_google_services" class="col-lg-4 o_light_label"/>
+                                    <field name="mobile_firebase_google_services" filename="mobile_firebase_google_services_name"/>
+                                    <field name="mobile_firebase_google_services_name" invisible="1"/>
+                                </div>
+                                <div class="row">
+                                    <label for="mobile_firebase_service_account" class="col-lg-4 o_light_label"/>
+                                    <field name="mobile_firebase_service_account" filename="mobile_firebase_service_account_name"/>
+                                    <field name="mobile_firebase_service_account_name" invisible="1"/>
+                                </div>
+                                <div class="row mt8">
+                                    <label for="mobile_firebase_status" class="col-lg-4 o_light_label"/>
+                                    <field name="mobile_firebase_status" class="text-muted"/>
+                                </div>
+                                <div class="row mt8">
+                                    <div class="col-lg-4"/>
+                                    <button name="action_mobile_firebase_test" type="object" class="btn btn-secondary" string="Send a test"/>
+                                </div>
+                            </div>
+                        </setting>
+                        <setting string="Push gateway" invisible="mobile_push_provider != 'gateway'" help="Relay service that delivers notifications to the mobile app (Firebase Cloud Messaging).">
+                            <div class="content-group">
+                                <div class="row mt8">
+                                    <label for="mobile_gateway_url" class="col-lg-4 o_light_label"/>
+                                    <field name="mobile_gateway_url" placeholder="https://push.example.com"/>
+                                </div>
+                                <div class="row">
+                                    <label for="mobile_gateway_token" class="col-lg-4 o_light_label"/>
+                                    <field name="mobile_gateway_token" password="True"/>
+                                </div>
+                                <div class="row mt8">
+                                    <label for="mobile_push_ios_e2e" class="col-lg-4 o_light_label"/>
+                                    <field name="mobile_push_ios_e2e"/>
+                                </div>
+                                <div class="mt8" invisible="not mobile_gateway_url or not mobile_gateway_token">
+                                    <field name="mobile_gateway_severity" invisible="1"/>
+                                    <div class="alert alert-info mb-1" role="alert" invisible="mobile_gateway_severity != 'info'">
+                                        <field name="mobile_gateway_notice" nolabel="1"/>
+                                    </div>
+                                    <div class="alert alert-warning mb-1" role="alert" invisible="mobile_gateway_severity != 'warning'">
+                                        <field name="mobile_gateway_notice" nolabel="1"/>
+                                    </div>
+                                    <div class="alert alert-danger mb-1" role="alert" invisible="mobile_gateway_severity != 'danger'">
+                                        <field name="mobile_gateway_notice" nolabel="1"/>
+                                    </div>
+                                    <button name="action_mobile_gateway_refresh" type="object" string="Check now" icon="oi-arrow-right" class="btn-link"/>
+                                </div>
+                            </div>
+                        </setting>
+                        <setting help="Notify the assignee on their phone when an activity (e.g. an approval request) is scheduled for them.">
+                            <field name="mobile_push_activity"/>
+                        </setting>
+                        <setting help="Notify users on their phone of every new message in their Odoo Inbox (mentions, messages on documents they follow). Users who chose to receive notifications by email get an email instead.">
+                            <field name="mobile_push_inbox"/>
+                        </setting>
+                    </block>
+                </app>
+            </xpath>
+        </field>
+    </record>
+
+    <record id="mobile_settings_action" model="ir.actions.act_window">
+        <field name="name">Settings</field>
+        <field name="res_model">res.config.settings</field>
+        <field name="view_mode">form</field>
+        <field name="context">{'module': 'mobile_connector', 'bin_size': False}</field>
+    </record>
+</odoo>
