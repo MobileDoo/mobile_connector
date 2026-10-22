@@ -1,0 +1,113 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo>
+    <record id="mobile_home_layout_view_tree" model="ir.ui.view">
+        <field name="name">mobile.home.layout.tree</field>
+        <field name="model">mobile.home.layout</field>
+        <field name="arch" type="xml">
+            <tree>
+                <field name="sequence" widget="handle"/>
+                <field name="name"/>
+                <field name="group_ids" widget="many2many_tags"/>
+                <field name="user_count"/>
+                <field name="active" widget="boolean_toggle"/>
+            </tree>
+        </field>
+    </record>
+
+    <record id="mobile_home_layout_view_form" model="ir.ui.view">
+        <field name="name">mobile.home.layout.form</field>
+        <field name="model">mobile.home.layout</field>
+        <field name="arch" type="xml">
+            <form>
+                <sheet>
+                    <widget name="web_ribbon" title="Archived" bg_color="text-bg-danger" invisible="active"/>
+                    <div class="oe_title">
+                        <label for="name"/>
+                        <h1><field name="name" placeholder="e.g. Sales team"/></h1>
+                    </div>
+                    <group>
+                        <group>
+                            <field name="group_ids" widget="many2many_tags" options="{'no_create': True}"/>
+                            <field name="user_count"/>
+                        </group>
+                        <group>
+                            <field name="sequence"/>
+                            <field name="active" invisible="1"/>
+                        </group>
+                    </group>
+                    <p class="text-muted">
+                        Defaults of the home screen for this role: what is shown and in which order. Items not listed
+                        stay available: users who may use them can add them (Customize). Leave a page empty to keep the
+                        company configuration for it.
+                    </p>
+                    <notebook>
+                        <page string="Blocks" name="sections">
+                            <field name="section_line_ids">
+                                <tree editable="bottom">
+                                    <field name="sequence" widget="handle"/>
+                                    <field name="kind" column_invisible="1"/>
+                                    <field name="section_key" required="1"/>
+                                    <field name="size"/>
+                                    <field name="visible" widget="boolean_toggle"/>
+                                </tree>
+                            </field>
+                        </page>
+                        <page string="Features" name="tiles">
+                            <field name="tile_line_ids">
+                                <tree editable="bottom">
+                                    <field name="sequence" widget="handle"/>
+                                    <field name="kind" column_invisible="1"/>
+                                    <field name="tile_key" required="1"/>
+                                    <field name="visible" widget="boolean_toggle"/>
+                                </tree>
+                            </field>
+                        </page>
+                        <page string="KPIs" name="kpis">
+                            <field name="kpi_line_ids">
+                                <tree editable="bottom">
+                                    <field name="sequence" widget="handle"/>
+                                    <field name="kind" column_invisible="1"/>
+                                    <field name="item_id" required="1" domain="[('kind', '=', 'kpi')]" options="{'no_create': True}"/>
+                                    <field name="visible" widget="boolean_toggle"/>
+                                </tree>
+                            </field>
+                        </page>
+                        <page string="Quick actions" name="shortcuts">
+                            <field name="shortcut_line_ids">
+                                <tree editable="bottom">
+                                    <field name="sequence" widget="handle"/>
+                                    <field name="kind" column_invisible="1"/>
+                                    <field name="item_id" required="1" domain="[('kind', '=', 'shortcut')]" options="{'no_create': True}"/>
+                                    <field name="visible" widget="boolean_toggle"/>
+                                </tree>
+                            </field>
+                        </page>
+                        <page string="Bottom tabs" name="tabs">
+                            <p class="text-muted">Home is always first and Settings always last; up to 3 tabs in
+                                between, shown only to users who may use them. Empty: the app's default tabs.</p>
+                            <field name="tab_line_ids">
+                                <tree editable="bottom">
+                                    <field name="sequence" widget="handle"/>
+                                    <field name="kind" column_invisible="1"/>
+                                    <field name="tab_key" required="1"/>
+                                </tree>
+                            </field>
+                        </page>
+                    </notebook>
+                </sheet>
+            </form>
+        </field>
+    </record>
+
+    <record id="mobile_home_layout_action" model="ir.actions.act_window">
+        <field name="name">Mobile Role Layouts</field>
+        <field name="res_model">mobile.home.layout</field>
+        <field name="view_mode">tree,form</field>
+        <field name="help" type="html">
+            <p class="o_view_nocontent_smiling_face">Give each role its own home screen and bottom tabs</p>
+            <p>Example: sales people get their quotations and sales figures first, engineers their check-in and time
+               off. A user gets the first layout (in this order) of one of their groups, else the layout without group.
+               Users can still arrange their own home screen within what they may use.</p>
+        </field>
+    </record>
+</odoo>

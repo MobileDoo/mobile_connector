@@ -1,0 +1,934 @@
+# Translation of Odoo Server.
+# This file contains the translation of the following modules:
+# 	* mobile_connector
+#
+
+msgid ""
+msgstr ""
+"Project-Id-Version: Odoo Server 17.0-20260908\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2026-10-06 11:10+0000\n"
+"PO-Revision-Date: 2026-10-06 11:10+0000\n"
+"Last-Translator: \n"
+"Language-Team: \n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: \n"
+"Plural-Forms: \n"
+"Language: vi_VN\n"
+
+#. module: mobile_connector
+#. odoo-python
+#: code:addons/mobile_connector/models/mobile_form_spec.py:0
+#: code:addons/mobile_connector/models/mobile_form_spec.py:0
+#, python-format
+msgid "%s is not a wizard."
+msgstr "%s không phải là wizard."
+
+#. module: mobile_connector
+#. odoo-python
+#: code:addons/mobile_connector/models/mobile_form_spec.py:0
+#, python-format
+msgid "Action not found."
+msgstr "Không tìm thấy hành động."
+
+#. module: mobile_connector
+#: model:ir.model.fields,field_description:mobile_connector.field_mobile_device__active
+#: model:ir.model.fields,field_description:mobile_connector.field_mobile_field_config__active
+msgid "Active"
+msgstr "Đang hoạt động"
+
+#. module: mobile_connector
+#: model:ir.model,name:mobile_connector.model_mail_activity
+msgid "Activity"
+msgstr "Hoạt động"
+
+#. module: mobile_connector
+#: model:ir.model.fields.selection,name:mobile_connector.selection__mobile_device__platform__android
+msgid "Android"
+msgstr "Android"
+
+#. module: mobile_connector
+#: model:ir.model.fields,field_description:mobile_connector.field_mobile_device__app_version
+msgid "App Version"
+msgstr "Phiên bản ứng dụng"
+
+#. module: mobile_connector
+#: model:ir.model.fields,field_description:mobile_connector.field_mobile_push_message__attempts
+msgid "Attempts"
+msgstr "Số lần gửi"
+
+#. module: mobile_connector
+#: model:ir.model.fields,field_description:mobile_connector.field_mobile_push_message__body
+msgid "Body"
+msgstr "Nội dung"
+
+#. module: mobile_connector
+#: model:ir.model,name:mobile_connector.model_res_config_settings
+msgid "Config Settings"
+msgstr "Cài đặt cấu hình"
+
+#. module: mobile_connector
+#: model:ir.model.fields,field_description:mobile_connector.field_mobile_device__create_uid
+#: model:ir.model.fields,field_description:mobile_connector.field_mobile_field_config__create_uid
+#: model:ir.model.fields,field_description:mobile_connector.field_mobile_push_message__create_uid
+msgid "Created by"
+msgstr "Được tạo bởi"
+
+#. module: mobile_connector
+#: model:ir.model.fields,field_description:mobile_connector.field_mobile_device__create_date
+#: model:ir.model.fields,field_description:mobile_connector.field_mobile_field_config__create_date
+#: model:ir.model.fields,field_description:mobile_connector.field_mobile_push_message__create_date
+msgid "Created on"
+msgstr "Được tạo vào"
+
+#. module: mobile_connector
+#: model:ir.model.fields,field_description:mobile_connector.field_mobile_push_message__data
+msgid "Data"
+msgstr "Dữ liệu"
+
+#. module: mobile_connector
+#: model:ir.model.fields,field_description:mobile_connector.field_mobile_device__device_uid
+msgid "Device UID"
+msgstr "Mã thiết bị"
+
+#. module: mobile_connector
+#: model:ir.model.fields,field_description:mobile_connector.field_mobile_device__name
+msgid "Device name"
+msgstr "Tên thiết bị"
+
+#. module: mobile_connector
+#: model:ir.model.constraint,message:mobile_connector.constraint_mobile_device_token_hash_uniq
+msgid "Device token must be unique."
+msgstr "Token thiết bị phải là duy nhất."
+
+#. module: mobile_connector
+#: model:ir.ui.menu,name:mobile_connector.menu_mobile_device
+msgid "Devices"
+msgstr "Thiết bị"
+
+#. module: mobile_connector
+#: model:ir.model.fields,field_description:mobile_connector.field_mobile_device__display_name
+#: model:ir.model.fields,field_description:mobile_connector.field_mobile_field_config__display_name
+#: model:ir.model.fields,field_description:mobile_connector.field_mobile_push_message__display_name
+msgid "Display Name"
+msgstr "Tên hiển thị"
+
+#. module: mobile_connector
+#: model:ir.model.fields,help:mobile_connector.field_ir_ui_menu__mobile_hide
+msgid ""
+"Do not show this menu (and its sub-menus) in the \"Odoo apps\" section of the mobile app."
+msgstr ""
+"Không hiển thị menu này (và các menu con) trong mục \"Ứng dụng Odoo\" của ứng dụng di động."
+
+#. module: mobile_connector
+#: model:ir.model.fields,field_description:mobile_connector.field_mobile_push_message__error
+msgid "Error"
+msgstr "Lỗi"
+
+#. module: mobile_connector
+#: model:ir.ui.menu,name:mobile_connector.menu_mobile_field_config
+msgid "Extra Fields"
+msgstr "Trường bổ sung"
+
+#. module: mobile_connector
+#: model:ir.model.fields.selection,name:mobile_connector.selection__mobile_push_message__state__failed
+msgid "Failed"
+msgstr "Thất bại"
+
+#. module: mobile_connector
+#: model_terms:ir.ui.view,arch_db:mobile_connector.res_config_settings_view_form
+msgid "Features"
+msgstr "Tính năng"
+
+#. module: mobile_connector
+#: model:ir.model.fields,field_description:mobile_connector.field_mobile_field_config__field_id
+msgid "Field"
+msgstr "Trường"
+
+#. module: mobile_connector
+#. odoo-python
+#: code:addons/mobile_connector/models/mobile_form_spec.py:0
+#, python-format
+msgid "Field %s is not a relational field."
+msgstr "Trường %s không phải trường quan hệ."
+
+#. module: mobile_connector
+#. odoo-python
+#: code:addons/mobile_connector/models/mobile_record_service.py:0
+#, python-format
+msgid "Field %s is not available on mobile."
+msgstr "Trường %s không dùng được trên ứng dụng di động."
+
+#. module: mobile_connector
+#: model:ir.model.fields,field_description:mobile_connector.field_mobile_field_config__field_name
+msgid "Field Name"
+msgstr "Tên trường"
+
+#. module: mobile_connector
+#: model:ir.model.fields.selection,name:mobile_connector.selection__mobile_field_config__scope__form
+msgid "Form"
+msgstr "Biểu mẫu"
+
+#. module: mobile_connector
+#: model_terms:ir.ui.view,arch_db:mobile_connector.mobile_device_view_search
+msgid "Group By"
+msgstr "Nhóm theo"
+
+#. module: mobile_connector
+#: model:ir.model,name:mobile_connector.model_ir_http
+msgid "HTTP Routing"
+msgstr "Định tuyến HTTP"
+
+#. module: mobile_connector
+#: model:ir.model.fields,field_description:mobile_connector.field_ir_ui_menu__mobile_hide
+msgid "Hide in Mobile App"
+msgstr "Ẩn trên ứng dụng di động"
+
+#. module: mobile_connector
+#: model:ir.model.fields,field_description:mobile_connector.field_mobile_device__id
+#: model:ir.model.fields,field_description:mobile_connector.field_mobile_field_config__id
+#: model:ir.model.fields,field_description:mobile_connector.field_mobile_push_message__id
+msgid "ID"
+msgstr "ID"
+
+#. module: mobile_connector
+#: model:ir.model.fields,help:mobile_connector.field_mobile_push_message__data
+msgid "JSON payload delivered to the app (all values are sent as strings)."
+msgstr ""
+"Dữ liệu JSON gửi tới ứng dụng (mọi giá trị đều được gửi dưới dạng chuỗi)."
+
+#. module: mobile_connector
+#: model:ir.model.fields,field_description:mobile_connector.field_mobile_field_config__label
+msgid "Label"
+msgstr "Nhãn"
+
+#. module: mobile_connector
+#: model:ir.model.fields,field_description:mobile_connector.field_mobile_device__last_seen
+msgid "Last Seen"
+msgstr "Hoạt động lần cuối"
+
+#. module: mobile_connector
+#: model:ir.model.fields,field_description:mobile_connector.field_mobile_device__write_uid
+#: model:ir.model.fields,field_description:mobile_connector.field_mobile_field_config__write_uid
+#: model:ir.model.fields,field_description:mobile_connector.field_mobile_push_message__write_uid
+msgid "Last Updated by"
+msgstr "Cập nhật lần cuối bởi"
+
+#. module: mobile_connector
+#: model:ir.model.fields,field_description:mobile_connector.field_mobile_device__write_date
+#: model:ir.model.fields,field_description:mobile_connector.field_mobile_field_config__write_date
+#: model:ir.model.fields,field_description:mobile_connector.field_mobile_push_message__write_date
+msgid "Last Updated on"
+msgstr "Cập nhật lần cuối vào"
+
+#. module: mobile_connector
+#: model:ir.model.fields.selection,name:mobile_connector.selection__mobile_field_config__scope__list
+msgid "List card"
+msgstr "Thẻ danh sách"
+
+#. module: mobile_connector
+#: model:ir.model,name:mobile_connector.model_ir_ui_menu
+msgid "Menu"
+msgstr ""
+
+#. module: mobile_connector
+#: model_terms:ir.ui.view,arch_db:mobile_connector.res_config_settings_view_form
+msgid "Mobile"
+msgstr "Di động"
+
+#. module: mobile_connector
+#: model:ir.model,name:mobile_connector.model_mobile_api
+msgid "Mobile API"
+msgstr "Mobile API"
+
+#. module: mobile_connector
+#: model:ir.model,name:mobile_connector.model_mobile_activity_service
+msgid "Mobile Activities"
+msgstr "Hoạt động trên di động"
+
+#. module: mobile_connector
+#: model:ir.ui.menu,name:mobile_connector.menu_mobile_root
+msgid "Mobile App"
+msgstr "Ứng dụng di động"
+
+#. module: mobile_connector
+#: model:ir.model,name:mobile_connector.model_mobile_device
+msgid "Mobile Device"
+msgstr "Thiết bị di động"
+
+#. module: mobile_connector
+#: model:ir.actions.act_window,name:mobile_connector.mobile_device_action
+msgid "Mobile Devices"
+msgstr "Thiết bị di động"
+
+#. module: mobile_connector
+#: model:ir.model,name:mobile_connector.model_mobile_field_config
+msgid "Mobile Extra Field"
+msgstr "Trường bổ sung trên di động"
+
+#. module: mobile_connector
+#: model:ir.actions.act_window,name:mobile_connector.mobile_field_config_action
+msgid "Mobile Extra Fields"
+msgstr "Trường bổ sung trên di động"
+
+#. module: mobile_connector
+#: model:ir.model,name:mobile_connector.model_mobile_form_spec
+msgid "Mobile Form Spec Engine"
+msgstr "Bộ dựng biểu mẫu di động"
+
+#. module: mobile_connector
+#: model:ir.model,name:mobile_connector.model_mobile_record_viewer
+msgid "Mobile Generic Record Viewer"
+msgstr "Trình xem bản ghi trên di động"
+
+#. module: mobile_connector
+#: model:ir.model,name:mobile_connector.model_mobile_menu_service
+msgid "Mobile Odoo Menus"
+msgstr ""
+
+#. module: mobile_connector
+#: model:ir.model,name:mobile_connector.model_mobile_push_message
+msgid "Mobile Push Message"
+msgstr "Thông báo đẩy di động"
+
+#. module: mobile_connector
+#: model:ir.model,name:mobile_connector.model_mobile_record_service
+msgid "Mobile Record Service (base)"
+msgstr "Dịch vụ bản ghi di động (cơ sở)"
+
+#. module: mobile_connector
+#: model:ir.model.fields,help:mobile_connector.field_mobile_field_config__widget
+msgid "Mobile widget key (leave empty to pick one from the field type)."
+msgstr "Mã widget trên di động (để trống để tự chọn theo kiểu trường)."
+
+#. module: mobile_connector
+#: model:ir.actions.server,name:mobile_connector.ir_cron_mobile_push_send_ir_actions_server
+msgid "Mobile: send push notifications"
+msgstr "Di động: gửi thông báo đẩy"
+
+#. module: mobile_connector
+#: model:ir.model.fields,field_description:mobile_connector.field_mobile_field_config__model_id
+msgid "Model"
+msgstr "Model"
+
+#. module: mobile_connector
+#: model:ir.model.fields,field_description:mobile_connector.field_mobile_field_config__model
+msgid "Model name"
+msgstr "Tên model"
+
+#. module: mobile_connector
+#: model:ir.model.fields.selection,name:mobile_connector.selection__mobile_push_message__state__skipped
+msgid "No device"
+msgstr "Không có thiết bị"
+
+#. module: mobile_connector
+#: model_terms:ir.ui.view,arch_db:mobile_connector.res_config_settings_view_form
+msgid ""
+"Notify the assignee on their phone when an activity (e.g. an approval request) is scheduled for them."
+msgstr ""
+"Gửi thông báo tới điện thoại của người được giao khi có hoạt động mới (ví dụ yêu cầu phê duyệt)."
+
+#. module: mobile_connector
+#: model:ir.model.fields,field_description:mobile_connector.field_res_config_settings__mobile_menu_browser
+msgid "Odoo menus in the app"
+msgstr "Menu Odoo trên ứng dụng"
+
+#. module: mobile_connector
+#: model:ir.model.fields,help:mobile_connector.field_mobile_field_config__label
+msgid "Overrides the field label on mobile."
+msgstr "Thay nhãn của trường khi hiển thị trên di động."
+
+#. module: mobile_connector
+#: model:ir.model.fields.selection,name:mobile_connector.selection__mobile_push_message__state__pending
+msgid "Pending"
+msgstr "Đang chờ"
+
+#. module: mobile_connector
+#: model_terms:ir.actions.act_window,help:mobile_connector.mobile_field_config_action
+msgid ""
+"Pick a model handled natively by the app (e.g. Time Off) and the extra fields to display. No code needed."
+msgstr ""
+"Chọn model mà ứng dụng hỗ trợ (ví dụ Nghỉ phép) và các trường bổ sung cần hiển thị. Không cần viết code."
+
+#. module: mobile_connector
+#: model:ir.model.fields,field_description:mobile_connector.field_mobile_device__platform
+msgid "Platform"
+msgstr "Nền tảng"
+
+#. module: mobile_connector
+#. odoo-python
+#: code:addons/mobile_connector/models/mobile_form_spec.py:0
+#, python-format
+msgid "Please fill in: %s"
+msgstr "Vui lòng nhập: %s"
+
+#. module: mobile_connector
+#: model:ir.actions.act_window,name:mobile_connector.mobile_push_message_action
+#: model:ir.ui.menu,name:mobile_connector.menu_mobile_push_message
+msgid "Push Messages"
+msgstr "Thông báo đẩy"
+
+#. module: mobile_connector
+#: model:ir.model.fields,field_description:mobile_connector.field_mobile_device__push_token
+msgid "Push Token"
+msgstr "Push token"
+
+#. module: mobile_connector
+#: model_terms:ir.ui.view,arch_db:mobile_connector.res_config_settings_view_form
+msgid "Push gateway"
+msgstr "Push gateway"
+
+#. module: mobile_connector
+#: model:ir.model.fields,field_description:mobile_connector.field_res_config_settings__mobile_gateway_url
+msgid "Push gateway URL"
+msgstr "URL push gateway"
+
+#. module: mobile_connector
+#: model:ir.model.fields,field_description:mobile_connector.field_res_config_settings__mobile_gateway_token
+msgid "Push gateway site token"
+msgstr "Site token của push gateway"
+
+#. module: mobile_connector
+#: model:ir.model.fields,field_description:mobile_connector.field_res_config_settings__mobile_push_activity
+msgid "Push new activities"
+msgstr "Thông báo khi có hoạt động mới"
+
+#. module: mobile_connector
+#: model_terms:ir.ui.view,arch_db:mobile_connector.res_config_settings_view_form
+msgid "Push notifications"
+msgstr "Thông báo đẩy"
+
+#. module: mobile_connector
+#: model_terms:ir.ui.view,arch_db:mobile_connector.res_config_settings_view_form
+msgid ""
+"Relay service that delivers notifications to the mobile app (Firebase Cloud Messaging)."
+msgstr ""
+"Dịch vụ trung gian gửi thông báo tới ứng dụng di động (Firebase Cloud Messaging)."
+
+#. module: mobile_connector
+#: model:ir.model.fields,field_description:mobile_connector.field_res_config_settings__mobile_require_app_lock
+msgid "Require biometric app lock"
+msgstr "Bắt buộc khoá ứng dụng bằng sinh trắc học"
+
+#. module: mobile_connector
+#: model_terms:ir.ui.view,arch_db:mobile_connector.mobile_device_view_tree
+msgid "Revoke"
+msgstr "Thu hồi"
+
+#. module: mobile_connector
+#: model_terms:ir.ui.view,arch_db:mobile_connector.mobile_device_view_search
+msgid "Revoked"
+msgstr "Đã thu hồi"
+
+#. module: mobile_connector
+#: model:ir.model.fields,field_description:mobile_connector.field_mobile_field_config__scope
+msgid "Scope"
+msgstr "Phạm vi"
+
+#. module: mobile_connector
+#: model_terms:ir.ui.view,arch_db:mobile_connector.res_config_settings_view_form
+msgid "Security"
+msgstr "Bảo mật"
+
+#. module: mobile_connector
+#: model:ir.model.fields.selection,name:mobile_connector.selection__mobile_push_message__state__sent
+msgid "Sent"
+msgstr "Đã gửi"
+
+#. module: mobile_connector
+#: model:ir.model.fields,field_description:mobile_connector.field_mobile_field_config__sequence
+msgid "Sequence"
+msgstr "Thứ tự"
+
+#. module: mobile_connector
+#: model:ir.actions.act_window,name:mobile_connector.mobile_settings_action
+#: model:ir.ui.menu,name:mobile_connector.menu_mobile_settings
+msgid "Settings"
+msgstr "Cấu hình"
+
+#. module: mobile_connector
+#: model_terms:ir.actions.act_window,help:mobile_connector.mobile_field_config_action
+msgid "Show custom fields in the mobile app"
+msgstr "Hiển thị trường tuỳ chỉnh trên ứng dụng di động"
+
+#. module: mobile_connector
+#: model_terms:ir.ui.view,arch_db:mobile_connector.res_config_settings_view_form
+msgid ""
+"Show the user's Odoo apps and menus in the app (any module, including custom ones). Records open read-only with their action buttons; hide a menu with \"Hide in Mobile App\" in Settings > Technical > Menu Items."
+msgstr ""
+"Hiển thị các ứng dụng và menu Odoo của người dùng trên app (mọi module, kể cả module tùy chỉnh). Bản ghi mở ở chế độ chỉ đọc kèm các nút thao tác; ẩn một menu bằng \"Ẩn trên ứng dụng di động\" tại Thiết lập > Kỹ thuật > Mục menu."
+
+#. module: mobile_connector
+#: model:ir.model.fields,help:mobile_connector.field_mobile_device__device_uid
+msgid ""
+"Stable identifier sent by the app (one active login per device and user)."
+msgstr ""
+"Mã định danh cố định do ứng dụng gửi (mỗi thiết bị và người dùng chỉ có một phiên đăng nhập)."
+
+#. module: mobile_connector
+#: model:ir.model.fields,field_description:mobile_connector.field_mobile_push_message__state
+msgid "State"
+msgstr "Trạng thái"
+
+#. module: mobile_connector
+#. odoo-python
+#: code:addons/mobile_connector/models/mobile_form_spec.py:0
+#, python-format
+msgid ""
+"This action is not available for this record any more. Please refresh."
+msgstr "Thao tác này không còn khả dụng với bản ghi. Vui lòng tải lại."
+
+#. module: mobile_connector
+#. odoo-python
+#: code:addons/mobile_connector/models/mobile_activity_service.py:0
+#, python-format
+msgid "This activity is assigned to someone else."
+msgstr "Hoạt động này được giao cho người khác."
+
+#. module: mobile_connector
+#. odoo-python
+#: code:addons/mobile_connector/models/mobile_menu_service.py:0
+#, python-format
+msgid "This menu does not show a list of records."
+msgstr "Menu này không hiển thị danh sách bản ghi."
+
+#. module: mobile_connector
+#. odoo-python
+#: code:addons/mobile_connector/models/mobile_menu_service.py:0
+#, python-format
+msgid "This menu is not available."
+msgstr "Menu này không khả dụng."
+
+#. module: mobile_connector
+#: model:ir.model.fields,field_description:mobile_connector.field_mobile_push_message__title
+msgid "Title"
+msgstr "Tiêu đề"
+
+#. module: mobile_connector
+#: model:ir.model.fields,field_description:mobile_connector.field_mobile_device__token_hash
+msgid "Token Hash"
+msgstr "Mã băm token"
+
+#. module: mobile_connector
+#. odoo-python
+#: code:addons/mobile_connector/models/mobile_form_spec.py:0
+#: code:addons/mobile_connector/models/mobile_record_service.py:0
+#, python-format
+msgid "Unknown action %s."
+msgstr "Không rõ thao tác %s."
+
+#. module: mobile_connector
+#. odoo-python
+#: code:addons/mobile_connector/models/mobile_activity_service.py:0
+#, python-format
+msgid "Unknown filter %s"
+msgstr "Không rõ bộ lọc %s"
+
+#. module: mobile_connector
+#. odoo-python
+#: code:addons/mobile_connector/models/mobile_record_service.py:0
+#, python-format
+msgid "Unknown scope %s"
+msgstr "Không rõ phạm vi %s"
+
+#. module: mobile_connector
+#: model:ir.model,name:mobile_connector.model_res_users
+#: model:ir.model.fields,field_description:mobile_connector.field_mobile_device__user_id
+#: model:ir.model.fields,field_description:mobile_connector.field_mobile_push_message__user_id
+#: model_terms:ir.ui.view,arch_db:mobile_connector.mobile_device_view_search
+msgid "User"
+msgstr "Người dùng"
+
+#. module: mobile_connector
+#: model_terms:ir.ui.view,arch_db:mobile_connector.res_config_settings_view_form
+msgid ""
+"Users must unlock the app with Face ID, fingerprint or the phone's passcode (they stay logged in, the password is never stored on the phone)."
+msgstr ""
+"Người dùng phải mở khoá ứng dụng bằng Face ID, vân tay hoặc mã khoá điện thoại (vẫn giữ đăng nhập, mật khẩu không bao giờ được lưu trên điện thoại)."
+
+#. module: mobile_connector
+#: model:ir.model.fields,field_description:mobile_connector.field_mobile_field_config__widget
+msgid "Widget"
+msgstr "Widget"
+
+#. module: mobile_connector
+#: model_terms:ir.ui.view,arch_db:mobile_connector.res_config_settings_view_form
+msgid "https://push.example.com"
+msgstr ""
+
+#. module: mobile_connector
+#: model:ir.model.fields.selection,name:mobile_connector.selection__mobile_device__platform__ios
+msgid "iOS"
+msgstr "iOS"
+
+#. module: mobile_connector
+#: model_terms:ir.ui.view,arch_db:mobile_connector.res_config_settings_view_form
+msgid "Branding"
+msgstr "Nhận diện thương hiệu"
+
+#. module: mobile_connector
+#: model_terms:ir.ui.view,arch_db:mobile_connector.res_config_settings_view_form
+msgid "App logo"
+msgstr "Logo ứng dụng"
+
+#. module: mobile_connector
+#: model_terms:ir.ui.view,arch_db:mobile_connector.res_config_settings_view_form
+msgid ""
+"Shown in the mobile app on the login screen, the home screen and the list of"
+" saved systems. The app downloads it once and keeps it until it changes. "
+"Square or wide PNG, up to 512 px."
+msgstr ""
+"Hiển thị trên ứng dụng di động ở màn đăng nhập, màn hình chính và danh sách "
+"hệ thống đã lưu. Ứng dụng tải logo một lần và giữ lại cho đến khi logo thay "
+"đổi. Ảnh PNG vuông hoặc ngang, tối đa 512 px."
+
+#. module: mobile_connector
+#: model:ir.model.fields,field_description:mobile_connector.field_res_company__mobile_logo
+#: model:ir.model.fields,field_description:mobile_connector.field_res_config_settings__mobile_logo
+msgid "Mobile app logo"
+msgstr "Logo ứng dụng di động"
+
+#. module: mobile_connector
+#: model:ir.model.fields,field_description:mobile_connector.field_res_config_settings__mobile_site_company_id
+msgid "Mobile Site Company"
+msgstr "Công ty của hệ thống trên ứng dụng"
+
+#. module: mobile_connector
+#: model:ir.model.fields,field_description:mobile_connector.field_res_config_settings__mobile_push_inbox
+msgid "Push Inbox messages"
+msgstr "Gửi push khi có tin nhắn trong Inbox"
+
+#. module: mobile_connector
+#: model_terms:ir.ui.view,arch_db:mobile_connector.res_config_settings_view_form
+msgid ""
+"Notify users on their phone of every new message in their Odoo Inbox "
+"(mentions, messages on documents they follow). Users who chose to receive "
+"notifications by email get an email instead."
+msgstr ""
+"Báo lên điện thoại mỗi khi có tin nhắn mới trong Inbox Odoo của người dùng "
+"(tin nhắc tên, tin nhắn trên chứng từ họ theo dõi). Người dùng chọn nhận "
+"thông báo qua email thì sẽ nhận email thay vì push."
+
+#. module: mobile_connector
+#: model_terms:ir.ui.view,arch_db:mobile_connector.res_config_settings_view_form
+msgid "Connect the app"
+msgstr "Kết nối ứng dụng"
+
+#. module: mobile_connector
+#: model_terms:ir.ui.view,arch_db:mobile_connector.res_config_settings_view_form
+msgid "Server address"
+msgstr "Địa chỉ máy chủ"
+
+#. module: mobile_connector
+#: model_terms:ir.ui.view,arch_db:mobile_connector.res_config_settings_view_form
+msgid ""
+"Users scan this QR code on the first screen of the app (Scan QR code) "
+"instead of typing the address. Print it or show it on a screen; it contains "
+"the address and the database, no password."
+msgstr ""
+"Người dùng quét mã QR này ở màn hình đầu tiên của ứng dụng (Quét mã QR) thay "
+"vì gõ địa chỉ. Có thể in ra hoặc chiếu lên màn hình; mã chỉ chứa địa chỉ và "
+"database, không chứa mật khẩu."
+
+#. module: mobile_connector
+#: model:ir.model.fields,field_description:mobile_connector.field_res_config_settings__mobile_public_url
+msgid "Server address for the app"
+msgstr "Địa chỉ máy chủ cho ứng dụng"
+
+#. module: mobile_connector
+#: model:ir.model.fields,help:mobile_connector.field_res_config_settings__mobile_public_url
+msgid ""
+"Address the phones use to reach this Odoo, e.g. https://erp.example.com. "
+"Empty: the web base URL."
+msgstr ""
+"Địa chỉ điện thoại dùng để truy cập Odoo này, ví dụ https://erp.example.com. "
+"Để trống: dùng địa chỉ web của Odoo."
+
+#. module: mobile_connector
+#: model:ir.model.fields,field_description:mobile_connector.field_res_config_settings__mobile_connect_qr
+msgid "Connect QR code"
+msgstr "Mã QR kết nối"
+
+#. module: mobile_connector
+#: model:ir.model.fields.selection,name:mobile_connector.selection__mobile_push_message__state__queued
+msgid "Queued"
+msgstr "Đã chuyển cho gateway"
+
+#. module: mobile_connector
+#: model:ir.model.fields,field_description:mobile_connector.field_mobile_push_message__queued_at
+msgid "Queued At"
+msgstr "Chuyển cho gateway lúc"
+
+#. module: mobile_connector
+#: model:ir.model.fields,help:mobile_connector.field_mobile_push_message__queued_at
+msgid "When the gateway took the message: no result after a while means it was lost."
+msgstr "Lúc gateway nhận tin: lâu không có kết quả nghĩa là tin đã mất."
+
+#. module: mobile_connector
+#. odoo-python
+#: code:addons/mobile_connector/models/res_config_settings.py:0
+msgid "%(accounts)s accounts received a notification in the last 30 days"
+msgstr "%(accounts)s tài khoản đã nhận thông báo trong 30 ngày qua"
+
+#. module: mobile_connector
+#. odoo-python
+#: code:addons/mobile_connector/models/res_config_settings.py:0
+msgid "%(notice)s (checked %(when)s UTC)"
+msgstr "%(notice)s (kiểm tra lúc %(when)s UTC)"
+
+#. module: mobile_connector
+#. odoo-python
+#: code:addons/mobile_connector/models/res_config_settings.py:0
+msgid "%(usage)s, almost all of the %(seats)s seats."
+msgstr "%(usage)s, gần hết %(seats)s suất của gói."
+
+#. module: mobile_connector
+#. odoo-python
+#: code:addons/mobile_connector/models/res_config_settings.py:0
+msgid "%(usage)s (%(seats)s seats)."
+msgstr "%(usage)s (gói %(seats)s suất)."
+
+#. module: mobile_connector
+#. odoo-python
+#: code:addons/mobile_connector/models/res_config_settings.py:0
+msgid "%(usage)s."
+msgstr "%(usage)s."
+
+#. module: mobile_connector
+#. odoo-python
+#: code:addons/mobile_connector/models/res_config_settings.py:0
+msgid ""
+"%(usage)s: more than the %(seats)s seats of the subscription. Contact the provider to extend it."
+msgstr ""
+"%(usage)s: nhiều hơn %(seats)s suất của gói đăng ký. Hãy liên hệ nhà cung cấp để nâng gói."
+
+#. module: mobile_connector
+#. odoo-python
+#: code:addons/mobile_connector/models/res_config_settings.py:0
+msgid ""
+"%(usage)s, every seat (%(seats)s) is used: accounts that did not receive any yet are refused. Contact the provider to extend the subscription."
+msgstr ""
+"%(usage)s, đã dùng hết %(seats)s suất: tài khoản chưa từng nhận thông báo sẽ bị từ chối. Hãy liên hệ nhà cung cấp để nâng gói."
+
+#. module: mobile_connector
+#. odoo-python
+#: code:addons/mobile_connector/models/res_config_settings.py:0
+msgid ""
+"Not checked yet: the gateway reports once a day, or press \"Check now\"."
+msgstr ""
+"Chưa kiểm tra: gateway báo mỗi ngày một lần, hoặc bấm \"Kiểm tra ngay\"."
+
+#. module: mobile_connector
+#. odoo-python
+#: code:addons/mobile_connector/models/res_config_settings.py:0
+msgid ""
+"The subscription of this site is suspended: notifications are not sent. Contact the provider of the push gateway."
+msgstr ""
+"Gói đăng ký của hệ thống này đang bị tạm ngưng: thông báo không được gửi. Hãy liên hệ nhà cung cấp push gateway."
+
+#. module: mobile_connector
+#. odoo-python
+#: code:addons/mobile_connector/models/res_config_settings.py:0
+msgid "Set the push gateway address and site token first."
+msgstr "Hãy nhập địa chỉ và site token của push gateway trước."
+
+#. module: mobile_connector
+#. odoo-python
+#: code:addons/mobile_connector/models/res_config_settings.py:0
+msgid "The push gateway cannot be reached: %s"
+msgstr "Không kết nối được push gateway: %s"
+
+#. module: mobile_connector
+#: model_terms:ir.ui.view,arch_db:mobile_connector.res_config_settings_view_form
+msgid "Check now"
+msgstr "Kiểm tra ngay"
+
+#. module: mobile_connector
+#: model:ir.model.fields,field_description:mobile_connector.field_res_config_settings__mobile_gateway_notice
+msgid "Subscription"
+msgstr "Gói đăng ký"
+
+#. module: mobile_connector
+#: model:ir.model.fields,field_description:mobile_connector.field_res_config_settings__mobile_push_ios_e2e
+msgid "iPhone notifications"
+msgstr "Thông báo trên iPhone"
+
+#. module: mobile_connector
+#: model:ir.model.fields,help:mobile_connector.field_res_config_settings__mobile_push_ios_e2e
+msgid ""
+"With the push gateway, the content of a notification for an iPhone can be encrypted so that only that iPhone reads it: the gateway, Google and Apple only carry a sealed message. Android phones are not concerned."
+msgstr ""
+"Với push gateway, nội dung thông báo gửi tới iPhone có thể được mã hoá để chỉ iPhone đó đọc được: gateway, Google và Apple chỉ chuyển một thông điệp đã niêm phong. Điện thoại Android không bị ảnh hưởng."
+
+#. module: mobile_connector
+#: model:ir.model.fields.selection,name:mobile_connector.selection__res_config_settings__mobile_push_ios_e2e__preferred
+msgid "End-to-end encrypted when the app supports it"
+msgstr "Mã hoá đầu cuối khi app hỗ trợ"
+
+#. module: mobile_connector
+#: model:ir.model.fields.selection,name:mobile_connector.selection__res_config_settings__mobile_push_ios_e2e__required
+msgid "Always end-to-end encrypted (no iPhone gets plain text)"
+msgstr "Luôn mã hoá đầu cuối (không iPhone nào nhận chữ rõ)"
+
+#. module: mobile_connector
+#. odoo-python
+#: code:addons/mobile_connector/models/mobile_push_message.py:0
+msgid ""
+"iPhones only receive end-to-end encrypted notifications (Settings > Mobile > Push): update the app and the push gateway."
+msgstr ""
+"iPhone chỉ nhận thông báo mã hoá đầu cuối (Settings > Mobile > Push): hãy cập nhật app và push gateway."
+
+#. module: mobile_connector
+#. odoo-python
+#: code:addons/mobile_connector/models/mobile_push_fcm.py:0
+msgid "Upload google-services.json and the service account key first."
+msgstr "Hãy tải lên google-services.json và khoá service account trước."
+
+#. module: mobile_connector
+#. odoo-python
+#: code:addons/mobile_connector/models/mobile_push_fcm.py:0
+msgid "Google refused the service account key (%s). Generate a new private key in the Firebase console (Project settings > Service accounts)."
+msgstr "Google từ chối khoá service account (%s). Hãy tạo khoá riêng tư mới trong Firebase console (Project settings > Service accounts)."
+
+#. module: mobile_connector
+#. odoo-python
+#: code:addons/mobile_connector/models/mobile_push_fcm.py:0
+msgid "Test notification"
+msgstr "Thông báo thử"
+
+#. module: mobile_connector
+#. odoo-python
+#: code:addons/mobile_connector/models/mobile_push_fcm.py:0
+msgid "Firebase is set up correctly."
+msgstr "Firebase đã được cấu hình đúng."
+
+#. module: mobile_connector
+#. odoo-python
+#: code:addons/mobile_connector/models/mobile_push_fcm.py:0
+msgid "Test notification sent to %s device(s)."
+msgstr "Đã gửi thông báo thử tới %s thiết bị."
+
+#. module: mobile_connector
+#. odoo-python
+#: code:addons/mobile_connector/models/mobile_push_fcm.py:0
+msgid "Firebase accepted no device (%s). Open the app on the phone once more so it registers again."
+msgstr "Firebase không nhận thiết bị nào (%s). Hãy mở lại app trên điện thoại để đăng ký lại."
+
+#. module: mobile_connector
+#. odoo-python
+#: code:addons/mobile_connector/models/mobile_push_fcm.py:0
+msgid "dead tokens: %s"
+msgstr "token hỏng: %s"
+
+#. module: mobile_connector
+#. odoo-python
+#: code:addons/mobile_connector/models/mobile_push_fcm.py:0
+msgid "Firebase accepts this configuration (project %s). No Android phone is registered on it yet: open the app on one to receive a real test."
+msgstr "Firebase chấp nhận cấu hình này (project %s). Chưa có điện thoại Android nào đăng ký: hãy mở app trên một máy để nhận thông báo thử thật."
+
+#. module: mobile_connector
+#. odoo-python
+#: code:addons/mobile_connector/models/mobile_push_fcm.py:0
+msgid "The service account may not send messages: give it the role \"Firebase Cloud Messaging API Admin\" and enable the \"Firebase Cloud Messaging API\" in the Google Cloud console."
+msgstr "Service account chưa được phép gửi tin: hãy cấp vai trò \"Firebase Cloud Messaging API Admin\" và bật \"Firebase Cloud Messaging API\" trong Google Cloud console."
+
+#. module: mobile_connector
+#. odoo-python
+#: code:addons/mobile_connector/models/mobile_push_fcm.py:0
+msgid "Firebase project \"%s\" not found: check that the service account belongs to it."
+msgstr "Không tìm thấy project Firebase \"%s\": hãy kiểm tra service account có thuộc project đó không."
+
+#. module: mobile_connector
+#. odoo-python
+#: code:addons/mobile_connector/models/mobile_push_fcm.py:0
+msgid "Firebase answered %(code)s %(status)s."
+msgstr "Firebase trả lời %(code)s %(status)s."
+
+#. module: mobile_connector
+#. odoo-python
+#: code:addons/mobile_connector/models/mobile_push_fcm.py:0
+msgid "Firebase"
+msgstr "Firebase"
+
+#. module: mobile_connector
+#: model_terms:ir.ui.view,arch_db:mobile_connector.res_config_settings_view_form
+msgid "Send a test"
+msgstr "Gửi thử"
+
+#. module: mobile_connector
+#. odoo-python
+#: code:addons/mobile_connector/models/mobile_dashboard.py:0
+#, python-format
+msgid "Waiting for you"
+msgstr "Chờ bạn xử lý"
+
+#. module: mobile_connector
+#. odoo-python
+#: code:addons/mobile_connector/models/mobile_dashboard.py:0
+#, python-format
+msgid "Sales"
+msgstr "Bán hàng"
+
+#. module: mobile_connector
+#. odoo-python
+#: code:addons/mobile_connector/models/mobile_dashboard.py:0
+#, python-format
+msgid "Purchases"
+msgstr "Mua hàng"
+
+#. module: mobile_connector
+#. odoo-python
+#: code:addons/mobile_connector/models/mobile_dashboard.py:0
+#, python-format
+msgid "People"
+msgstr "Nhân sự"
+
+#. module: mobile_connector
+#. odoo-python
+#: code:addons/mobile_connector/models/mobile_dashboard.py:0
+#, python-format
+msgid "Stock and delivery"
+msgstr "Kho và giao hàng"
+
+#. module: mobile_connector
+#. odoo-python
+#: code:addons/mobile_connector/models/mobile_dashboard.py:0
+#, python-format
+msgid "Overview"
+msgstr "Tổng quan"
+
+#. module: mobile_connector
+#. odoo-python
+#: code:addons/mobile_connector/models/mobile_activity_service.py:0
+#, python-format
+msgid "Write a note or schedule the next step."
+msgstr "Hãy viết ghi chú hoặc hẹn việc tiếp theo."
+
+#. module: mobile_connector
+#. odoo-python
+#: code:addons/mobile_connector/models/mobile_activity_service.py:0
+#, python-format
+msgid "The note is too long (%(max)s characters at most)."
+msgstr "Ghi chú quá dài (tối đa %(max)s ký tự)."
+
+#. module: mobile_connector
+#. odoo-python
+#: code:addons/mobile_connector/models/mobile_activity_service.py:0
+#, python-format
+msgid "This record has no notes."
+msgstr "Chứng từ này không có ghi chú."
+
+#. module: mobile_connector
+#. odoo-python
+#: code:addons/mobile_connector/models/mobile_activity_service.py:0
+#, python-format
+msgid "This kind of next step is not available here."
+msgstr "Loại việc tiếp theo này không dùng được ở đây."
+
+#. module: mobile_connector
+#. odoo-python
+#: code:addons/mobile_connector/models/mobile_activity_service.py:0
+#, python-format
+msgid "Choose the date of the next step."
+msgstr "Hãy chọn ngày của việc tiếp theo."
